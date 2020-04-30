@@ -12,3 +12,11 @@ def view_welcome_page():
 @flask_app.route("/about/")
 def view_about():
     return render_template("about.html", text="Toto je text")
+
+@flask_app.route("/articles/")
+def view_articles():
+    return render_template("articles.html", text="Toto je text")
+
+@flask_app.route("/admin/")
+def view_admin():
+    return render_template("admin.html", text="Toto je text")

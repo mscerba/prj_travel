@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to Markdown blog</title>
-    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}>
+{% extends "_main.html" %}
 
-</head>
-<body>
-<header>
-    <h1>Michal Ščerba</h1>
-</header>
+{% block title %} Welcome to Markdown blog {% endblock %}
 
-<nav class="nav">
-    <ul>
-        <li><a href="#">About</a> </li>
-        <li><a href="#">Article</a> </li>
-        <li><a href="#">Admin</a> </li>
-    </ul>
-</nav>
-
-<main>
-    <blockquote>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ducimus
-        modi reiciendis vero voluptates. Accusamus amet consequuntur cumque dicta esse,
-        est harum ipsa iste laborum nulla placeat, ratione sequi tempora?
-    </blockquote>
-</main>
-
-<footer>
-    <p>
-        (c) 2020 Michal Ščerba
-    </p>
-</footer>
-
-</body>
-</html>
+{% block main%}
+Toto je text, který jsem vložil do zjednodušené šablony
+{% endblock %}
