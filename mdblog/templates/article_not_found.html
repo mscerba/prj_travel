@@ -1,0 +1,17 @@
+{% extends "_main.html" %}
+
+{% block title %} Article not found {% endblock %}
+
+{% block main%}
+    <h1>Ooops!</h1>
+    <h2>This article doesn't exists</h2>
+    <p>Článek s is "{{ art_id }}" neexistuje. </p>
+
+    <div>
+        <a href="/">Home</a> |
+        <a href={{ url_for("view_articles") }}>All articles</a>
+    </div>
+
+
+
+{% endblock %}
