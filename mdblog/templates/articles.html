@@ -3,6 +3,9 @@
 {% block title %} Articles {% endblock %}
 
 {% block main%}
+    {% if "logged" in session %}
+        <a href="{{ url_for("view_add_article") }}">add_new_article</a>
+    {% endif %}
     {% if articles %}
         <ul>
         {% for article in articles %}

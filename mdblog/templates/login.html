@@ -4,13 +4,14 @@
 
 {% block main %}
 <form action="{{ url_for("login_user") }}" method="post">
+    {{ form.csrf_token }}
     <p>
-        <label>Username: </label>
-        <input type="text" name="username">
+        {{ form.username.label }}
+        {{ form.username() }}
     </p>
     <p>
-        <label>Password:</label>
-        <input type="password" name="password">
+        {{ form.password.label }}
+        {{ form.password() }}
     </p>
     <p>
         <input type="submit" value="login">
