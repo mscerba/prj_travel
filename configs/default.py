@@ -1,3 +1,1 @@
 SECRET_KEY = b"\xfc}\x1f\x1b\x10\xb0\x86m\xe9\xdbvi\xc1\xfb\xe4\x8b9'xTkM?\x9d"
-USERNAME = "admin"
-PASSWORD = "admin"

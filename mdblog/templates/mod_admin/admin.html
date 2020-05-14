@@ -3,5 +3,5 @@
 {% block title %} Admin {% endblock %}
 
 {% block main %}
-Stránka pouze pro administrátory
+    <a href="{{ url_for("admin.view_change_password") }}">Change Password</a>
 {% endblock %}
